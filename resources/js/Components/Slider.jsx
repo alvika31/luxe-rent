@@ -28,6 +28,16 @@ const Slider = () => {
             buttonColor: "bg-green-600 hover:bg-green-700",
             link: "/daftar-mobil",
         },
+        {
+            id: 3,
+            image: `${appUrl}/storage/hero3.png`,
+            title: "Armada Lengkap untuk Setiap Kebutuhan",
+            description:
+                "Temukan pilihan kendaraan terbaik mulai dari city car, MPV, hingga minibus premium — siap menemani perjalanan bisnis maupun liburan Anda.",
+            buttonText: "Mulai Sewa",
+            buttonColor: "bg-green-600 hover:bg-green-700",
+            link: "/daftar-mobil",
+        },
     ];
 
     // Auto play functionality
