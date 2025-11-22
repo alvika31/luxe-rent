@@ -17,13 +17,17 @@ export default function CardRentalService() {
                 "Rasakan kemudahan bepergian ke mana pun Anda mau dengan layanan sewa mobil yang bisa disesuaikan kebutuhan. Pilih sendiri jenis kendaraan dan lama penyewaannya—semua tanpa repot!",
             icon: <Calendar className="w-8 h-8" />,
             color: "bg-blue-50 border-blue-200 text-blue-600",
+            gradient: "from-blue-400 to-blue-600",
+            shadow: "shadow-blue-500/40",
         },
         {
             title: "Pilihan Mobil Lengkap & Terawat",
             description:
-                "Kami menghadirkan beragam tipe kendaraan, mulai dari mobil keluarga yang nyaman hingga mobil premium untuk acara spesial. Setiap unit selalu dirawat dengan baik agar tetap dalam kondisi prima.",
+                "Kami menyediakan berbagai pilihan mobil, Hiace, dan minibus yang cocok untuk keluarga, perjalanan bisnis, wisata, hingga rombongan besar. Semua unit selalu dirawat secara berkala demi kenyamanan perjalanan Anda.",
             icon: <Car className="w-8 h-8" />,
             color: "bg-green-50 border-green-200 text-green-600",
+            gradient: "from-green-400 to-green-600",
+            shadow: "shadow-green-500/40",
         },
         {
             title: "Harga Ramah di Kantong",
@@ -31,6 +35,8 @@ export default function CardRentalService() {
                 "Nikmati tarif sewa yang bersaing dan jelas tanpa biaya tersembunyi. Kami juga rutin menghadirkan promo menarik untuk pelanggan setia.",
             icon: <DollarSign className="w-8 h-8" />,
             color: "bg-amber-50 border-amber-200 text-amber-600",
+            gradient: "from-amber-400 to-amber-600",
+            shadow: "shadow-amber-500/40",
         },
         {
             title: "Pemesanan Cepat & Mudah",
@@ -38,6 +44,8 @@ export default function CardRentalService() {
                 "Booking mobil kini jauh lebih simpel. Cukup pesan melalui website atau aplikasi kami, dan kendaraan pilihan Anda siap diambil dan digunakan.",
             icon: <Clock className="w-8 h-8" />,
             color: "bg-purple-50 border-purple-200 text-purple-600",
+            gradient: "from-purple-400 to-purple-600",
+            shadow: "shadow-purple-500/40",
         },
         {
             title: "Program Keanggotaan Eksklusif",
@@ -45,6 +53,8 @@ export default function CardRentalService() {
                 "Dapatkan keuntungan lebih dengan bergabung dalam program membership kami. Prosesnya mudah, manfaatnya besar, termasuk harga sewa yang lebih hemat.",
             icon: <Users className="w-8 h-8" />,
             color: "bg-red-50 border-red-200 text-red-600",
+            gradient: "from-red-400 to-red-600",
+            shadow: "shadow-red-500/40",
         },
         {
             title: "Layanan Pelanggan 24/7",
@@ -52,6 +62,8 @@ export default function CardRentalService() {
                 "Tim kami siap membantu kapan pun Anda butuh. Hubungi layanan pelanggan 24 jam kami untuk pertanyaan atau bantuan selama masa penyewaan.",
             icon: <Headphones className="w-8 h-8" />,
             color: "bg-indigo-50 border-indigo-200 text-indigo-600",
+            gradient: "from-indigo-400 to-indigo-600",
+            shadow: "shadow-indigo-500/40",
         },
     ];
 
@@ -69,11 +81,12 @@ export default function CardRentalService() {
             {/* Header */}
             <div className="max-w-7xl mx-auto text-center mb-16">
                 <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                    Layanan Sewa Mobil Premium
+                    Layanan Sewa Mobil, Hiace & Minibus Premium
                 </h1>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Nikmati pengalaman berkendara yang nyaman dan hemat dengan
-                    berbagai pilihan mobil terbaik kami
+                    Nikmati perjalanan nyaman dan hemat dengan pilihan kendaraan
+                    terbaik — mulai dari city car, mobil keluarga, Hiace, hingga
+                    minibus untuk rombongan besar.
                 </p>
 
                 {/* Benefits List */}
@@ -81,10 +94,13 @@ export default function CardRentalService() {
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
-                            className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm"
+                            className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-3 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-white/20"
                         >
-                            <CheckCircle className="w-5 h-5 text-green-500" />
-                            <span className="text-sm font-medium text-gray-700">
+                            <div className="relative">
+                                <div className="absolute inset-0 bg-green-500 rounded-full blur-sm opacity-60 animate-pulse"></div>
+                                <CheckCircle className="w-6 h-6 text-green-600 relative z-10 drop-shadow-md" />
+                            </div>
+                            <span className="text-sm font-semibold text-gray-800">
                                 {benefit}
                             </span>
                         </div>
@@ -98,43 +114,134 @@ export default function CardRentalService() {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 overflow-hidden"
+                            className="group bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white/20 relative overflow-hidden"
                         >
+                            {/* Background Effect */}
+                            <div
+                                className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-5 group-hover:opacity-10 transition-opacity duration-500`}
+                            ></div>
+
                             {/* Icon Section */}
-                            <div className={`p-6 border-b ${feature.color}`}>
+                            <div className={`p-8 relative z-10`}>
                                 <div className="flex items-center justify-between">
-                                    <div className="p-3 rounded-xl bg-white shadow-sm">
-                                        {feature.icon}
+                                    {/* 3D Icon Container */}
+                                    <div className="relative">
+                                        {/* Main 3D Icon */}
+                                        <div
+                                            className={`
+                                            relative p-4 rounded-2xl 
+                                            bg-gradient-to-br ${feature.gradient}
+                                            shadow-2xl ${feature.shadow}
+                                            transition-all duration-500 
+                                            transform group-hover:scale-110 
+                                            group-hover:rotate-3 
+                                            group-hover:shadow-3xl
+                                            border border-white/30
+                                            perspective-1000
+                                            transform-style-3d
+                                        `}
+                                        >
+                                            {/* Icon dengan efek 3D */}
+                                            <div className="text-white drop-shadow-lg transform translate-z-10">
+                                                {feature.icon}
+                                            </div>
+
+                                            {/* Top Highlight */}
+                                            <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-white/30 to-transparent rounded-t-2xl"></div>
+
+                                            {/* Bottom Shadow */}
+                                            <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/10 to-transparent rounded-b-2xl"></div>
+                                        </div>
+
+                                        {/* 3D Depth Shadow */}
+                                        <div
+                                            className={`
+                                            absolute inset-0 
+                                            rounded-2xl 
+                                            blur-xl opacity-50 
+                                            group-hover:opacity-70 
+                                            group-hover:blur-2xl
+                                            transition-all duration-500
+                                            bg-gradient-to-br ${feature.gradient}
+                                            transform translate-y-3 scale-95
+                                            -z-10
+                                        `}
+                                        ></div>
+
+                                        {/* Floating Particles */}
+                                        <div className="absolute -top-2 -right-2 w-4 h-4 bg-white rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping"></div>
+                                        <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-white rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping animation-delay-300"></div>
                                     </div>
-                                    <div className="text-2xl font-bold text-gray-300 opacity-50">
+
+                                    <div className="text-2xl font-bold text-gray-300/60 group-hover:text-gray-400 transition-colors duration-300">
                                         {String(index + 1).padStart(2, "0")}
                                     </div>
                                 </div>
                             </div>
 
                             {/* Content Section */}
-                            <div className="p-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                            <div className="p-8 pt-4 relative z-10">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors duration-300">
                                     {feature.title}
                                 </h3>
-                                <p className="text-gray-600 leading-relaxed">
+                                <p className="text-gray-600 leading-relaxed text-lg group-hover:text-gray-700 transition-colors duration-300">
                                     {feature.description}
                                 </p>
                             </div>
 
-                            {/* Hover Effect Border */}
+                            {/* 3D Hover Effect Border */}
                             <div
-                                className={`h-1 w-0 group-hover:w-full transition-all duration-300 ${
-                                    feature.color
-                                        .replace("bg-", "bg-")
-                                        .replace("50", "500")
-                                        .split(" ")[0]
-                                }`}
+                                className={`
+                                absolute bottom-0 left-0 right-0 h-2 
+                                bg-gradient-to-r ${feature.gradient}
+                                transform origin-left scale-x-0 
+                                group-hover:scale-x-100 
+                                transition-transform duration-700
+                                rounded-b-3xl
+                                shadow-lg ${feature.shadow}
+                            `}
+                            ></div>
+
+                            {/* Corner Accents */}
+                            <div
+                                className={`absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 ${feature.color
+                                    .split(" ")[2]
+                                    .replace(
+                                        "text-",
+                                        "border-"
+                                    )} rounded-tl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                            ></div>
+                            <div
+                                className={`absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 ${feature.color
+                                    .split(" ")[2]
+                                    .replace(
+                                        "text-",
+                                        "border-"
+                                    )} rounded-tr-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                             ></div>
                         </div>
                     ))}
                 </div>
             </div>
+
+            {/* Custom CSS untuk efek 3D tambahan */}
+            <style jsx>{`
+                .perspective-1000 {
+                    perspective: 1000px;
+                }
+                .transform-style-3d {
+                    transform-style: preserve-3d;
+                }
+                .translate-z-10 {
+                    transform: translateZ(10px);
+                }
+                .animation-delay-300 {
+                    animation-delay: 300ms;
+                }
+                .shadow-3xl {
+                    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+                }
+            `}</style>
         </div>
     );
 }

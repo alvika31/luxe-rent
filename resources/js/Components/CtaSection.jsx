@@ -21,12 +21,12 @@ const CtaSection = () => {
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-400/30 text-blue-200 px-4 py-2 rounded-full text-sm font-medium mb-6">
                             <Car className="w-4 h-4" />
-                            Sewa Mobil Lepas Kunci
+                            Sewa Mobil, Hiace & Minibus
                         </div>
 
                         {/* Title */}
                         <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                            Cari Sewa Mobil Lepas Kunci?{" "}
+                            Cari layanan sewa kendaraan terpercaya di Indonesia?{" "}
                             <span className="text-blue-400">
                                 R-Luxe Rent Mobil
                             </span>{" "}
@@ -35,12 +35,11 @@ const CtaSection = () => {
 
                         {/* Description */}
                         <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                            Kami menyediakan berbagai pilihan mobil sewa, mulai
-                            dari mobil keluarga, mobil mewah, hingga mobil
-                            niaga. Semua kendaraan kami terawat dengan baik dan
-                            siap menemani perjalanan Anda di Bandung. Cari mobil
-                            sewaan dengan harga terbaik? Kunjungi R-Luxe Rent
-                            Mobil sekarang!
+                            Kami menyediakan berbagai pilihan armada mulai dari
+                            mobil keluarga, mobil mewah, Hiace, hingga minibus
+                            untuk kebutuhan wisata maupun rombongan besar. Semua
+                            kendaraan terawat dan siap digunakan kapan pun Anda
+                            butuh.
                         </p>
 
                         {/* Features */}
@@ -127,8 +126,9 @@ const CtaSection = () => {
                 {/* Additional Info */}
                 <div className="text-center mt-12 pt-8 border-t border-white/10">
                     <p className="text-blue-200 text-sm">
-                        📍 Beroperasi di Bandung dan Sekitarnya • 🚗 Fleet
-                        Terawat • 💰 Harga Kompetitif
+                        📍 Beroperasi dengan jaringan tersebar di
+                        seluruh Indonesia • 🚗 Fleet Terawat • 💰 Harga
+                        Kompetitif
                     </p>
                 </div>
             </div>

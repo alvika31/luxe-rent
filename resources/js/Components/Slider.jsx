@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
-import { usePage } from "@inertiajs/react";
+import { Link, usePage } from "@inertiajs/react";
 
 const Slider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,18 +13,20 @@ const Slider = () => {
             image: `${appUrl}/storage/hero1.png`,
             title: "R-Luxe Rent",
             description:
-                "Nikmati pengalaman berkendara yang aman, nyaman, dan tepat waktu bersama armada terbaik kami.",
+                "Nikmati pengalaman perjalanan yang aman, nyaman, dan tepat waktu bersama armada terbaik kami di seluruh Indonesia.",
             buttonText: "Jelajahi Koleksi",
             buttonColor: "bg-blue-600 hover:bg-blue-700",
+            link: "/daftar-mobil",
         },
         {
             id: 2,
             image: `${appUrl}/storage/hero2.png`,
-            title: "Rental Mobil Termurah di Bandung",
+            title: "Layanan Sewa Mobil Terpercaya di Indonesia",
             description:
-                "Mulai perjalanan Anda bersama R-Luxe Rent dengan layanan premium dan harga bersahabat.",
+                "Mulai perjalanan Anda dengan layanan premium, armada lengkap, dan harga bersahabat dari R-Luxe Rent.",
             buttonText: "Lihat Mobil Keluarga",
             buttonColor: "bg-green-600 hover:bg-green-700",
+            link: "/daftar-mobil",
         },
     ];
 
@@ -87,11 +89,12 @@ const Slider = () => {
                                 <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed">
                                     {slide.description}
                                 </p>
-                                <button
+                                <Link
+                                    href={slide.link}
                                     className={`${slide.buttonColor} text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg`}
                                 >
                                     {slide.buttonText}
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

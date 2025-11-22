@@ -17,12 +17,14 @@ const HeaderMenu = () => {
     };
 
     return (
-        <header className="bg-white shadow-lg sticky top-0 z-50">
+        <header className="bg-gray-900 shadow-lg sticky top-0 z-50">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
                     {/* Logo */}
                     <div className="flex items-center">
-                        <img src="/logo.jpg" className="w-16" />
+                        <Link href="/">
+                            <img src="/logo.jpg" className="w-16" />
+                        </Link>
                     </div>
 
                     {/* Desktop Menu */}
@@ -31,7 +33,7 @@ const HeaderMenu = () => {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 relative group"
+                                className="text-white hover:text-blue-600 font-medium transition-colors duration-300 relative group"
                             >
                                 {item.name}
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -55,17 +57,17 @@ const HeaderMenu = () => {
                         onClick={toggleMenu}
                     >
                         <span
-                            className={`block h-0.5 w-6 bg-gray-700 transition-transform duration-300 ${
+                            className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${
                                 isMenuOpen ? "rotate-45 translate-y-1.5" : ""
                             }`}
                         ></span>
                         <span
-                            className={`block h-0.5 w-6 bg-gray-700 transition-opacity duration-300 ${
+                            className={`block h-0.5 w-6 bg-white transition-opacity duration-300 ${
                                 isMenuOpen ? "opacity-0" : "opacity-100"
                             }`}
                         ></span>
                         <span
-                            className={`block h-0.5 w-6 bg-gray-700 transition-transform duration-300 ${
+                            className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${
                                 isMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
                             }`}
                         ></span>
@@ -83,7 +85,7 @@ const HeaderMenu = () => {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-gray-700 hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-blue-50 transition-all duration-300"
+                                className="text-white hover:text-blue-600 font-medium py-2 px-4 rounded-lg hover:bg-blue-50 transition-all duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.name}

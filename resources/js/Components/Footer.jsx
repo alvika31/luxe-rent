@@ -26,11 +26,12 @@ const Footer = () => {
                     <div className="space-y-4">
                         <img src="/logo.jpg" className="w-16" />
                         <p className="text-gray-300 leading-relaxed">
-                            R-Luxe Rent adalah penyedia layanan sewa mobil
-                            terpercaya di Bandung. Kami menyediakan berbagai
-                            jenis kendaraan berkualitas dengan pelayanan
-                            profesional untuk kebutuhan perjalanan bisnis maupun
-                            liburan Anda.
+                            R-Luxe Rent adalah penyedia layanan sewa kendaraan
+                            terpercaya di Indonesia. Kami menyediakan berbagai
+                            jenis armada berkualitas—mulai dari mobil keluarga,
+                            SUV, mobil premium, Hiace, hingga minibus—dengan
+                            pelayanan profesional untuk kebutuhan perjalanan
+                            bisnis, wisata, maupun perjalanan rombongan Anda.
                         </p>
                         <div className="flex space-x-4 pt-4">
                             <a

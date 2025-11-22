@@ -34,29 +34,28 @@ const AboutShort = () => {
                                         <span className="font-semibold text-blue-600">
                                             R-Luxe Rent
                                         </span>{" "}
-                                        adalah penyedia rental mobil Bandung
-                                        murah yang menawarkan pilihan kendaraan
-                                        paling lengkap dan berkualitas di Kota
-                                        Bandung. Sebagai salah satu layanan
-                                        rental mobil terpercaya, kami
-                                        menyediakan berbagai jenis mobil mulai
-                                        dari Camry, Mercy, New Fortuner VRZ, New
-                                        Pajero, dan banyak pilihan lainnya
-                                        sesuai kebutuhan perjalanan Anda.
+                                        R-Luxe Rent adalah layanan sewa mobil
+                                        terpercaya di Indonesia yang menyediakan
+                                        armada lengkap dan berkualitas untuk
+                                        berbagai kebutuhan perjalanan. Kami
+                                        menawarkan pilihan kendaraan mulai dari
+                                        city car, SUV, mobil premium, Hiace,
+                                        hingga minibus untuk rombongan besar.
                                     </p>
                                 </div>
 
                                 {/* Paragraf 2 */}
                                 <div className="space-y-4">
                                     <p className="text-lg text-gray-700 leading-relaxed">
-                                        Layanan kami sudah digunakan oleh banyak
-                                        pelanggan di wilayah Bandung,
-                                        sekitarnya, hingga berbagai daerah di
-                                        Jawa Barat dan Jakarta. Dengan dukungan
-                                        tim profesional yang siap membantu
-                                        selama 24 jam penuh, kami berkomitmen
-                                        memberikan pengalaman sewa mobil yang
-                                        nyaman, aman, dan memuaskan.
+                                        Layanan kami telah digunakan oleh
+                                        pelanggan dari berbagai kota di
+                                        Indonesia untuk kebutuhan pribadi,
+                                        wisata, bisnis, event, hingga perjalanan
+                                        jarak jauh. Dengan dukungan tim
+                                        profesional yang siap membantu selama 24
+                                        jam, kami berkomitmen memberikan
+                                        pengalaman sewa yang aman, nyaman, dan
+                                        memuaskan.
                                     </p>
                                 </div>
 
@@ -77,7 +76,7 @@ const AboutShort = () => {
                                     <div className="flex items-center space-x-2">
                                         <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                                         <span className="text-gray-700">
-                                            Wilayah Luas
+                                            Jangkauan Nasional
                                         </span>
                                     </div>
                                     <div className="flex items-center space-x-2">

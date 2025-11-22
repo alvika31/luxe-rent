@@ -151,8 +151,9 @@ const MobilList = ({ mobils }) => {
                     List Mobil Rental
                 </h1>
                 <p className="text-gray-600 max-w-2xl mx-auto">
-                    Temukan mobil terbaik untuk kebutuhan perjalanan Anda dengan
-                    berbagai pilihan rental yang fleksibel
+                    Temukan kendaraan terbaik—mulai dari mobil keluarga hingga
+                    Hiace dan minibus—dengan pilihan rental yang fleksibel
+                    sesuai kebutuhan perjalanan Anda.
                 </p>
             </div>
 
