@@ -7,15 +7,15 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    $mobils = Mobil::limit(4)->get();
+    $mobils = Mobil::where('is_active', true)->limit(4)->get();
     return Inertia::render('Home', ['mobils' => $mobils]);
 });
 Route::get('/daftar-mobil', function () {
-    $mobils = Mobil::all();
+    $mobils = Mobil::where('is_active', true)->get();
     return Inertia::render('DaftarMobil', ['mobils' => $mobils]);
 });
 Route::get('/reservasi', function () {
-    $mobils = Mobil::all();
+    $mobils = Mobil::where('is_active', true)->get();
     return Inertia::render('Reservasi', ['mobils' => $mobils]);
 });
 Route::get('/kontak', function () {
